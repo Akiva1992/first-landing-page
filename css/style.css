@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Barlow" ;
+    src: url(../fonts/Barlow-Regular-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow" ;
+    src: url(../fonts/Barlow-Italic-webfont.woff) format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Barlow" ;
+    src: url(../fonts/Barlow-Bold-webfont.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Barlow" ;
+    src: url(../fonts/Barlow-Light-webfont.woff) format("woff");
+    font-weight: light;
+    font-style: normal;
+}
+*{
+    font-family: "chathura";
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #bdb0d0;    
+    padding: 20px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 20px rgba(0,0,0,.16);
+    padding: 8px;
+    border-radius: 2px;
+}
+
+
+
+.logo-text {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    /* box-shadow: 1px 1px 20px rgba(0,0,0,.06); */
+}
+
+
+.logo-img {
+    transform: rotate(28deg);
+    width: 80px;
+    box-shadow: 1px 1px 20px rgba(0,0,0,.12);
+}
+
+
+.links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    padding: 8px;
+}
