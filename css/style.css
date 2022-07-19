@@ -26,8 +26,13 @@
     font-style: normal;
 }
 *{
-    font-family: "chathura";
+    font-family: 'Courier New', monospace;
     color: black;
+}
+
+body {
+    margin: 0%;
+    background-color: #fafafa;
 }
 
 ul {
@@ -40,22 +45,20 @@ a {
     text-decoration: none;
 }
 
-.header {
-    background-color: #C1ADAE;    
-    padding: 20px;
-}
-
 .header-top{
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    background-color: #ff9899; 
+    box-shadow: 1px 1px 6px rgba(0,0,0,.16); 
+    padding: 40px;  
 }
 
 .logo {
     display: flex;
     align-items: center;
-    box-shadow: 1px 1px 20px rgba(0,0,0,.16);
-    padding: 8px;
+    /* box-shadow: 1px 1px 6px rgba(0,0,0,.16); */
+    /* padding: 20px; */
     border-radius: 2px;
 }
 
@@ -64,7 +67,7 @@ a {
 .logo-text {
     font-weight: bold;
     font-style: italic;
-    font-size: 35px;
+    font-size: 60px;
     /* text-shadow: 1px 1px #fff; */
     /* box-shadow: 1px 1px 20px rgba(0,0,0,.06); */
 }
@@ -79,30 +82,31 @@ a {
 
 .links {
     display: flex;
-    gap: 12px;
+    gap: 30px;
     align-items: center;
-    font-size: 30px;
+    font-size: 60px;
     font-style: italic;
     padding: 8px;
 }
 
 .header-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 40px; 
 }
 
 .left-side-info {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 12px;
 }
 
 .info-main-text{
-    font-size: 30px;
+    font-size: 48px;
 }
 
 .info-secondery-text {
-    font-size: 15px;
+    font-size: 28px;
 }
 
 .top-button {
@@ -115,6 +119,5 @@ a {
 
 .right-side-imgs{
     display: flex;
-    margin:0px;
-    padding: 0%;
+
 }
