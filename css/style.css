@@ -1,38 +1,47 @@
 @font-face {
-    font-family: "Barlow" ;
-    src: url(../fonts/Barlow-Regular-webfont.woff) format("woff");
+    font-family: "Amble" ;
+    src: url(../fonts/amble/Amble-Regular-webfont.woff) format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Barlow" ;
-    src: url(../fonts/Barlow-Italic-webfont.woff) format("woff");
+    font-family: "Amble" ;
+    src: url(../fonts/amble/Amble-Italic-webfont.woff) format("woff");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: "Barlow" ;
-    src: url(../fonts/Barlow-Bold-webfont.woff) format("woff");
+    font-family: "Amble" ;
+    src: url(../fonts/amble/Amble-Bold-webfont.woff) format("woff");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Barlow" ;
-    src: url(../fonts/Barlow-Light-webfont.woff) format("woff");
+    font-family: "Amble" ;
+    src: url(../fonts/amble/Amble-Light-webfont.woff) format("woff");
     font-weight: light;
     font-style: normal;
 }
 *{
-    font-family: 'Courier New', monospace;
-    color: black;
+    font-family: 'Amble';
+    color: #222222;
 }
 
 body {
     margin: 0%;
-    background-color: #fafafa;
+    /* background-color: #e9e1d6; */
+    background-image: linear-gradient(to left bottom, #7e463e, #7c4652, #714a62, #61506d, #505570, #505873, #505c75, #515f77, #5f617e, #706382, #816583, #926680);
+}
+
+.header {
+    /* background-image: linear-gradient(to right top, #7e463e, #7c4652, #714a62, #61506d, #505570, #505873, #505c75, #515f77, #5f617e, #706382, #816583, #926680); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 ul {
@@ -48,17 +57,15 @@ a {
 .header-top{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
-    background-color: #ff9899; 
     box-shadow: 1px 1px 6px rgba(0,0,0,.16); 
     padding: 40px;  
+    border-bottom: 1.5px #222222 dotted;
+    align-self: stretch;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    /* box-shadow: 1px 1px 6px rgba(0,0,0,.16); */
-    /* padding: 20px; */
     border-radius: 2px;
 }
 
@@ -67,16 +74,17 @@ a {
 .logo-text {
     font-weight: bold;
     font-style: italic;
-    font-size: 60px;
-    /* text-shadow: 1px 1px #fff; */
-    /* box-shadow: 1px 1px 20px rgba(0,0,0,.06); */
+    font-size: 44px;
 }
 
 
 .logo-img {
-    transform: rotate(28deg);
-    width: 80px;
-    box-shadow: 1px 1px 20px rgba(0,0,0,.12);
+    transform: rotate(33deg);
+    width: 80px;   
+    padding-left: 3px;
+    padding-bottom: 3px;
+    box-shadow: 2px 2px 4px 1px rgba(0,0,0,.12);
+
 }
 
 
@@ -84,15 +92,18 @@ a {
     display: flex;
     gap: 30px;
     align-items: center;
-    font-size: 60px;
+    font-size: 38px;
     font-style: italic;
     padding: 8px;
 }
 
 .header-bottom {
+    max-width: 700px;
     display: flex;
     justify-content: center;
-    padding: 40px; 
+    justify-items: center;
+    padding: 70px; 
+    border-bottom: 1.5px #222222 dotted;
 }
 
 .left-side-info {
@@ -102,11 +113,11 @@ a {
 }
 
 .info-main-text{
-    font-size: 48px;
+    font-size: 28px;
 }
 
 .info-secondery-text {
-    font-size: 28px;
+    font-size: 16px;
 }
 
 .top-button {
@@ -119,5 +130,38 @@ a {
 
 .right-side-imgs{
     display: flex;
+}
 
+.body-top {
+    padding: 25px 70px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-header-text{
+    background-color: #714a62;
+    font-weight: bold;
+    font-size: 48px;
+    padding: 28px;
+    width: 200px;
+    margin-bottom: 18px;
+    box-shadow: 2px 4px 4px 4px rgba(0,0,0,.12);
+    
+    /* flex: 1; */
+}
+
+.body-imgs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,.12);
+    padding: 20px;
+}
+
+.text {
+    max-width: 200px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    padding: 2px 10px 10px;
 }
